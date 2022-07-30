@@ -1,3 +1,3 @@
 # Khoa Nguyen's Personal Portfolio
 
-Created in [React](https://reactjs.org/) with [ChakraUI](https://chakra-ui.com/).
+My [portfolio](https://hkhoa-ng.github.io/hkhoa-ng-portfolio/) created in [React](https://reactjs.org/) with [ChakraUI](https://chakra-ui.com/).

@@ -13,6 +13,7 @@ import {
   Heading,
   VStack,
   Image,
+  useColorModeValue,
 } from '@chakra-ui/react';
 import Footer from '../components/Footer';
 
@@ -26,6 +27,8 @@ import {
 import { BsChevronRight } from 'react-icons/bs';
 
 function Home({ pageSelect }) {
+  const bg = useColorModeValue('#e9ddc7', 'gray.700');
+
   return (
     <Container pt={10}>
       <Box>
@@ -36,7 +39,8 @@ function Home({ pageSelect }) {
             textAlign="center"
             backdropFilter="auto"
             backdropBlur="8px"
-            bg="gray.700"
+            bg={bg}
+            zIndex={-2}
           >
             Hello, I&apos;m a Bachelor student based in Finland!
           </Box>
@@ -122,11 +126,15 @@ function Home({ pageSelect }) {
               <Link
                 isExternal
                 href="https://www.instagram.com/khue.still.paints/"
-                color="teal.200"
+                color="teal.600"
               >
                 Painting
               </Link>
-              , Crafts, Playing music, and Gaming.
+              ,{' '}
+              <Link isExternal href="https://hkhoa.itch.io/" color="teal.600">
+                Making Games
+              </Link>
+              , Playing music, and Gaming.
             </Text>
             <Heading
               fontSize="1.2em"

@@ -2,7 +2,6 @@ import { ColorModeSwitcher } from '../ColorModeSwitcher';
 import {
   Box,
   Link,
-  Button,
   Flex,
   Grid,
   Stack,
@@ -16,6 +15,8 @@ import {
   MenuList,
   MenuItem,
   IconButton,
+  DarkMode,
+  useColorModeValue,
 } from '@chakra-ui/react';
 import { GoThreeBars } from 'react-icons/go';
 
@@ -25,6 +26,7 @@ import Home from '../pages/Home';
 import Works from '../pages/Works';
 
 export default function Navbar({ pageSelect, activePage }) {
+  const bg = useColorModeValue('#e9ddc7', '#2c4653');
   return (
     <Container
       position="fixed"
@@ -33,7 +35,7 @@ export default function Navbar({ pageSelect, activePage }) {
       centerContent
       backdropFilter="blur(5px)"
       backdropBlur="8px"
-      bg="gray.800"
+      bg={bg}
       h="3em"
     >
       <Box
@@ -95,7 +97,7 @@ export default function Navbar({ pageSelect, activePage }) {
               <MenuButton
                 as={IconButton}
                 icon={<GoThreeBars />}
-                variant="outline"
+                variant="ghost"
               />
               <MenuList>
                 <Link

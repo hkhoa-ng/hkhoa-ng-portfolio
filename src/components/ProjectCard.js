@@ -14,7 +14,7 @@ import {
 function ProjectCard({ id, name, description, image, source, url }) {
   console.log(image);
   return (
-    <VStack maxW="240px" textAlign="center" minH={350}>
+    <VStack maxW="200px" textAlign="center" minH={350}>
       <VStack pt={2} minH="260px">
         <Image src={image} borderRadius={10} maxW="180px" />
         <Text fontWeight="bold">{name}</Text>
@@ -22,15 +22,15 @@ function ProjectCard({ id, name, description, image, source, url }) {
           {description}
         </Text>
       </VStack>
-      <ButtonGroup>
+      <ButtonGroup maxW={200}>
         <Button variant="ghost" colorScheme="teal">
           <Link isExternal href={source}>
-            Source code
+            Source
           </Link>
         </Button>
         <Button variant="ghost" colorScheme="teal">
           <Link isExternal href={url}>
-            Project page
+            Project
           </Link>
         </Button>
       </ButtonGroup>

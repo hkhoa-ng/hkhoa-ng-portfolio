@@ -40,12 +40,12 @@ const projectsData = [
 const collaborationsData = [
   {
     id: 1,
-    name: 'A Random Game',
+    name: 'Karik',
     description:
-      'A small game developed in 5 days for a Game Jam. Made with a friend in Unity.',
-    img: 'https://via.placeholder.com/150',
+      'A shooter game developed in 5 days for a Game Jam. Made with a friend in Unity.',
+    img: 'images/projectImages/karik.png',
     source: 'https://github.com/hkhoa-ng/game-jam-july-2022',
-    url: '',
+    url: 'https://nhoxkien.itch.io/karik',
   },
 ];
 
