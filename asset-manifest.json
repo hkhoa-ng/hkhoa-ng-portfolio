@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/hkhoa-ng-portfolio/static/js/main.7599b399.js",
+    "main.js": "/hkhoa-ng-portfolio/static/js/main.79f5b95f.js",
     "static/media/coffee.mp4": "/hkhoa-ng-portfolio/static/media/coffee.9262e9d2bd63a456eefc.mp4",
     "index.html": "/hkhoa-ng-portfolio/index.html",
-    "main.7599b399.js.map": "/hkhoa-ng-portfolio/static/js/main.7599b399.js.map"
+    "main.79f5b95f.js.map": "/hkhoa-ng-portfolio/static/js/main.79f5b95f.js.map"
   },
   "entrypoints": [
-    "static/js/main.7599b399.js"
+    "static/js/main.79f5b95f.js"
   ]
 }
