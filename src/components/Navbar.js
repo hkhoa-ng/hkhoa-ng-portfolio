@@ -1,34 +1,29 @@
-import { ColorModeSwitcher } from '../ColorModeSwitcher';
 import {
   Box,
   Link,
   Flex,
-  Grid,
   Stack,
   Text,
-  Code,
   Spacer,
   Container,
-  Heading,
   Menu,
   MenuButton,
   MenuList,
   MenuItem,
   IconButton,
-  DarkMode,
   useColorModeValue,
+  Button,
 } from '@chakra-ui/react';
 import { GoThreeBars } from 'react-icons/go';
-
+import ThemeToggleButton from './ThemeToggleButton';
 import React from 'react';
-
-import Home from '../pages/Home';
-import Works from '../pages/Works';
+import { FaGithub } from 'react-icons/fa';
 
 export default function Navbar({ pageSelect, activePage }) {
-  const bg = useColorModeValue('#e9ddc7', '#2c4653');
+  const bg = useColorModeValue('#efd5bf', 'gray.900');
   return (
     <Container
+      zIndex={10}
       position="fixed"
       minW="100vw"
       display="flex"
@@ -43,7 +38,7 @@ export default function Navbar({ pageSelect, activePage }) {
         fontSize="xl"
         display="flex"
         justify="center"
-        minW={{ base: '100%', md: '300px' }}
+        minW={{ base: '100%', md: '650px' }}
         pt={1}
       >
         <Text alignCenter fontWeight="bold" ms={2}>
@@ -59,8 +54,18 @@ export default function Navbar({ pageSelect, activePage }) {
             fontWeight={activePage === 'Home' ? 'bold' : 'light'}
             textDecoration={activePage === 'Home' ? 'underline' : 'none'}
             textUnderlineOffset={6}
-            textDecorationColor="#525252"
+            textDecorationColor="teal.200"
             textDecorationThickness={4}
+            _hover={
+              activePage === 'Home'
+                ? {
+                    textDecoration: 'underline',
+                    textUnderlineOffset: 6,
+                    textDecorationColor: 'teal.200',
+                    textDecorationThickness: 4,
+                  }
+                : {}
+            }
             onClick={() => {
               pageSelect('Home');
             }}
@@ -71,8 +76,18 @@ export default function Navbar({ pageSelect, activePage }) {
             fontWeight={activePage === 'Works' ? 'bold' : 'light'}
             textDecoration={activePage === 'Works' ? 'underline' : 'none'}
             textUnderlineOffset={6}
-            textDecorationColor="#525252"
+            textDecorationColor="teal.200"
             textDecorationThickness={4}
+            _hover={
+              activePage === 'Works'
+                ? {
+                    textDecoration: 'underline',
+                    textUnderlineOffset: 6,
+                    textDecorationColor: 'teal.200',
+                    textDecorationThickness: 4,
+                  }
+                : {}
+            }
             onClick={() => {
               pageSelect('Works');
             }}
@@ -82,15 +97,19 @@ export default function Navbar({ pageSelect, activePage }) {
           <Link
             fontWeight="light"
             href="https://github.com/hkhoa-ng"
+            leftIcon={<FaGithub />}
             isExternal
+            _hover={{}}
+            h="100%"
+            px={3}
+            maxH={10}
           >
             Source
           </Link>
-          <Spacer px="10" />
         </Stack>
         <Spacer />
         <Flex me={2}>
-          <ColorModeSwitcher justifySelf="flex-end" />
+          <ThemeToggleButton justifySelf="flex-end" />
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu>

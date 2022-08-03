@@ -1,16 +1,9 @@
 import React from 'react';
-import {
-  Container,
-  Box,
-  Button,
-  Heading,
-  Grid,
-  GridItem,
-  Divider,
-} from '@chakra-ui/react';
+import { Container, Box, Heading, Grid, GridItem } from '@chakra-ui/react';
 import ProjectCard from '../components/ProjectCard';
 import Footer from '../components/Footer';
 import { projectsData, collaborationsData } from '../data/projectData';
+import { AnimatedPage } from '../animations/animations';
 
 function Works() {
   const projectCards = projectsData.map(project => {
@@ -47,45 +40,51 @@ function Works() {
     );
   });
   return (
-    <Container pt={10} maxW={{ base: '400px', md: '600px' }} centerContent>
-      <Box minW={{ base: '400px', md: '600px' }} my={5}>
-        <Heading
-          fontSize="1.2em"
-          textDecoration="underline"
-          textUnderlineOffset={6}
-          textDecorationColor="#525252"
-          textDecorationThickness={4}
-          marginBottom={10}
-        >
-          Works
-        </Heading>
-        <Grid
-          templateColumns={{ base: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)' }}
-          gap={4}
-          maxW="300px"
-        >
-          {projectCards}
-        </Grid>
-      </Box>
+    <AnimatedPage id="work">
+      <Container pt={0} maxW={{ base: '400px', md: '600px' }} centerContent>
+        <Box minW={{ base: '400px', md: '600px' }} my={5}>
+          <Heading
+            fontSize="1.2em"
+            textDecoration="underline"
+            textUnderlineOffset={6}
+            textDecorationColor="#525252"
+            textDecorationThickness={4}
+            marginBottom={10}
+          >
+            Works
+          </Heading>
+          <Grid
+            templateColumns={{ base: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)' }}
+            gap={4}
+            maxW="300px"
+          >
+            {projectCards}
+          </Grid>
+        </Box>
 
-      <Box minW={{ base: '400px', md: '600px' }}>
-        <Heading
-          fontSize="1.2em"
-          textDecoration="underline"
-          textUnderlineOffset={6}
-          textDecorationColor="#525252"
-          textDecorationThickness={4}
-          marginBottom={4}
-        >
-          Collaborations
-        </Heading>
-        <Grid templateColumns="repeat(2, 1fr)" gap={4}>
-          {collabCards}
-        </Grid>
-      </Box>
+        <Box minW={{ base: '400px', md: '600px' }}>
+          <Heading
+            fontSize="1.2em"
+            textDecoration="underline"
+            textUnderlineOffset={6}
+            textDecorationColor="#525252"
+            textDecorationThickness={4}
+            marginBottom={4}
+          >
+            Collaborations
+          </Heading>
+          <Grid
+            templateColumns={{ base: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)' }}
+            gap={4}
+            maxW="300px"
+          >
+            {collabCards}
+          </Grid>
+        </Box>
 
-      <Footer />
-    </Container>
+        <Footer />
+      </Container>
+    </AnimatedPage>
   );
 }
 

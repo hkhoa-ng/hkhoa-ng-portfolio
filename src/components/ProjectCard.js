@@ -1,9 +1,7 @@
 import React from 'react';
 import {
-  Box,
   Text,
   Image,
-  Container,
   Button,
   Link,
   ButtonGroup,
@@ -12,7 +10,6 @@ import {
 } from '@chakra-ui/react';
 
 function ProjectCard({ id, name, description, image, source, url }) {
-  console.log(image);
   return (
     <VStack maxW="200px" textAlign="center" minH={350}>
       <VStack pt={2} minH="260px">

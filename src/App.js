@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
-import { ChakraProvider, DarkMode, theme } from '@chakra-ui/react';
-import { ColorModeSwitcher } from './ColorModeSwitcher';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Home from './pages/Home';
-import Works from './pages/Works';
+import { ChakraProvider, theme, useColorModeValue } from '@chakra-ui/react';
+import Wrapper from './components/Wrapper';
 
 function App() {
   const [page, setPage] = useState('Home');
@@ -13,13 +9,10 @@ function App() {
     setPage(name);
   };
 
+  const bg = useColorModeValue('#F1DFD1', 'gray.700');
   return (
     <ChakraProvider theme={theme}>
-      <Navbar pageSelect={pageSelect} activePage={page} />
-
-      <Hero />
-      {page === 'Home' && <Home pageSelect={pageSelect} />}
-      {page === 'Works' && <Works />}
+      <Wrapper />
     </ChakraProvider>
   );
 }
