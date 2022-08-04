@@ -66,6 +66,15 @@ const collaborationsData = [
       'https://www.figma.com/file/CDJGvGFspXlKytnXK2wAYx/EventGo-Prototype?node-id=0%3A1',
     url: 'https://www.behance.net/gallery/134056463/EventGo-Web-Service',
   },
+  {
+    id: 3,
+    name: 'Student Dashboard',
+    description:
+      'A Sisu student dashboard clone, made with Java as the final project for my Programming 3 course.',
+    img: 'images/projectImages/sisu.png',
+    source: 'https://github.com/hkhoa-ng/tie-prog3-sisu-clone',
+    url: 'https://sis-tuni.funidata.fi/student/login',
+  },
 ];
 
 export { projectsData, collaborationsData };

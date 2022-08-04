@@ -1,17 +1,40 @@
-import React, { useState } from 'react';
-import { ChakraProvider, theme, useColorModeValue } from '@chakra-ui/react';
+import React, { useState, useEffect } from 'react';
+import {
+  ChakraProvider,
+  theme,
+  Center,
+  Box,
+  Heading,
+  VStack,
+} from '@chakra-ui/react';
 import Wrapper from './components/Wrapper';
+import HashLoader from 'react-spinners/HashLoader';
 
 function App() {
-  const [page, setPage] = useState('Home');
+  const [loading, setLoading] = useState(false);
 
-  const pageSelect = name => {
-    setPage(name);
-  };
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 6000);
+  }, []);
 
-  const bg = useColorModeValue('#F1DFD1', 'gray.700');
   return (
     <ChakraProvider theme={theme}>
+      {loading && (
+        <Box h="180vh" w="100vw" zIndex={15} bg="gray.800" position="absolute">
+          <Center
+            h="100vh"
+            w="100vw"
+            position="absolute"
+            zIndex={15}
+            bg="gray.800"
+          >
+            <HashLoader size={100} color={'#81E6D9'} loading={loading} />
+          </Center>
+        </Box>
+      )}
       <Wrapper />
     </ChakraProvider>
   );
