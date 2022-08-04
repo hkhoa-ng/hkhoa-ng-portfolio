@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/hkhoa-ng-portfolio/static/js/main.c5f3c994.js",
+    "main.js": "/hkhoa-ng-portfolio/static/js/main.2fcc28b3.js",
     "static/js/232.168acb53.chunk.js": "/hkhoa-ng-portfolio/static/js/232.168acb53.chunk.js",
     "index.html": "/hkhoa-ng-portfolio/index.html",
-    "main.c5f3c994.js.map": "/hkhoa-ng-portfolio/static/js/main.c5f3c994.js.map",
+    "main.2fcc28b3.js.map": "/hkhoa-ng-portfolio/static/js/main.2fcc28b3.js.map",
     "232.168acb53.chunk.js.map": "/hkhoa-ng-portfolio/static/js/232.168acb53.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.c5f3c994.js"
+    "static/js/main.2fcc28b3.js"
   ]
 }
