@@ -1,6 +1,6 @@
-# Khoa Nguyen's Personal Portfolio
+# Khoa Nguyen's Personal Website
 
-### [hkhoa-ng.github.io/hkhoa-ng-portfolio](https://hkhoa-ng.github.io/hkhoa-ng-portfolio/)
+### Check it out [here](https://hkhoa-ng.github.io/hkhoa-ng-portfolio/)!
 
 ## Features
 
