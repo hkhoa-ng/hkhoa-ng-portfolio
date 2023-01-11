@@ -18,7 +18,7 @@ const projectsData = [
     url: 'https://hkhoa-ng.github.io/random-quote-generator/',
   },
   {
-    id: 5,
+    id: 6,
     name: 'Smoof',
     description:
       'UI design for a smart food delivery service. Made as the final project for my Introduction to SE course.',
@@ -27,7 +27,7 @@ const projectsData = [
     url: 'https://www.behance.net/gallery/131783703/Smoof-Smart-Food-Website',
   },
   {
-    id: 3,
+    id: 4,
     name: 'Fire Out!',
     description:
       'A retro twin-sticks shooter. Made with Unity, Aseprite, and Bosca Ceoil.',
@@ -36,13 +36,22 @@ const projectsData = [
     url: 'https://hkhoa.itch.io/fire-out',
   },
   {
-    id: 4,
+    id: 5,
     name: 'Sacramentrum',
     description:
       'A one-button, bullet hell game. Made with GameMaker Studio 2 and Aseprite.',
     img: 'images/projectImages/sacramentrum.png',
     source: 'N/A',
     url: 'https://hkhoa.itch.io/sacramentrum',
+  },
+  {
+    id: 3,
+    name: 'Real-time Chat',
+    description:
+      'A minimal real-time chat application. Made with React.js and Firebase.',
+    img: 'images/projectImages/realtime-chat.png',
+    source: 'https://github.com/hkhoa-ng/react-realtime-chat',
+    url: 'https://hkhoa-ng.github.io/react-realtime-chat/',
   },
 ];
 
