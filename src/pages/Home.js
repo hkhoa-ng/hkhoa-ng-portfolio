@@ -87,7 +87,7 @@ function Home({ pageSelect }) {
                     pageSelect('Works');
                   }}
                 >
-                  My portfolio
+                  My works
                 </Button>
               </Box>
               <Heading
@@ -130,7 +130,7 @@ function Home({ pageSelect }) {
                 mb={4}
                 mt={10}
               >
-                I love doing
+                I love...
               </Heading>
               <Text textAlign="justify">
                 <Link
@@ -148,7 +148,7 @@ function Home({ pageSelect }) {
                 >
                   Making Games
                 </Link>
-                , Playing music, and Gaming.
+                , and playing Music.
               </Text>
               <Heading
                 fontSize="1.2em"

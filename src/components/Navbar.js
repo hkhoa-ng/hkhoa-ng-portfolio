@@ -13,6 +13,7 @@ import {
   IconButton,
   useColorModeValue,
   Button,
+  Center,
 } from '@chakra-ui/react';
 import { GoThreeBars } from 'react-icons/go';
 import ThemeToggleButton from './ThemeToggleButton';
@@ -104,7 +105,9 @@ export default function Navbar({ pageSelect, activePage }) {
             px={3}
             maxH={10}
           >
-            Source
+            <Center h="90%">
+              <FaGithub bg="teal" />
+            </Center>
           </Link>
         </Stack>
         <Spacer />

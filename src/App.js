@@ -1,12 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {
-  ChakraProvider,
-  theme,
-  Center,
-  Box,
-  Heading,
-  VStack,
-} from '@chakra-ui/react';
+import { ChakraProvider, theme, Center, Box } from '@chakra-ui/react';
 import Wrapper from './components/Wrapper';
 import HashLoader from 'react-spinners/HashLoader';
 
@@ -17,7 +10,7 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 6000);
+    }, 7000);
   }, []);
 
   return (
@@ -35,6 +28,7 @@ function App() {
           </Center>
         </Box>
       )}
+
       <Wrapper />
     </ChakraProvider>
   );

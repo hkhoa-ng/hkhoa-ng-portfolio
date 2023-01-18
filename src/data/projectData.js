@@ -44,6 +44,15 @@ const projectsData = [
     source: 'N/A',
     url: 'https://hkhoa.itch.io/sacramentrum',
   },
+  {
+    id: 5,
+    name: 'Creative Coding',
+    description:
+      'Regenerative art, using p5.js. Utilized procedural generation, Perlin noise, and cellular automata.',
+    img: 'images/projectImages/p5.png',
+    source: 'https://editor.p5js.org/hkhoa-ng/sketches',
+    url: 'https://editor.p5js.org/hkhoa-ng/sketches',
+  },
 ];
 
 const collaborationsData = [

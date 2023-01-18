@@ -8,7 +8,8 @@ import HashLoader from 'react-spinners/HashLoader';
 function Hero() {
   return (
     <Container pt="50px" h={450} w={{ base: 400, md: 800 }} centerContent>
-      <Spline scene="https://prod.spline.design/TiYfa9oKLVYe2iii/scene.splinecode" />
+      {/* <Spline scene="https://prod.spline.design/TiYfa9oKLVYe2iii/scene.splinecode" /> */}
+      <Spline scene="https://prod.spline.design/MsXq-eyxX9SE9U7B/scene.splinecode" />
     </Container>
   );
 }
