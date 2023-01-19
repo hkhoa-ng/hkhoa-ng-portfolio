@@ -30,13 +30,22 @@ const projectsData = [
     id: 4,
     name: '(Another) Wordle Clone',
     description:
-      'Yet another clone of the popular game, Wordle, made in React.js',
+      'Yet another clone of the popular game, Wordle, made with React.js',
     img: 'images/projectImages/wordle.png',
-    source: 'https://github.com/hkhoa-ng/yet-another-wordle-clone/tree/main',
+    source: 'https://github.com/hkhoa-ng/yet-another-wordle-clone/',
     url: 'https://hkhoa-ng.github.io/yet-another-wordle-clone/',
   },
   {
     id: 5,
+    name: 'CLI Pomodoro',
+    description:
+      'A simple Pomodoro-like app runs in the terminal, made with Node.js',
+    img: 'images/projectImages/pomodoro.png',
+    source: 'https://github.com/hkhoa-ng/cli-pomodoro/',
+    url: 'https://www.npmjs.com/package/cli-pomodoro/',
+  },
+  {
+    id: 6,
     name: 'Fire Out!',
     description:
       'A retro twin-sticks shooter. Made with Unity, Aseprite, and Bosca Ceoil.',
@@ -45,7 +54,7 @@ const projectsData = [
     url: 'https://hkhoa.itch.io/fire-out',
   },
   {
-    id: 6,
+    id: 7,
     name: 'Smoof',
     description:
       'UI design for a smart food delivery service. Made as the final project for my Introduction to SE course.',
@@ -55,7 +64,7 @@ const projectsData = [
   },
 
   {
-    id: 7,
+    id: 8,
     name: 'Sacramentrum',
     description:
       'A one-button, bullet hell game. Made with GameMaker Studio 2 and Aseprite.',
@@ -64,7 +73,7 @@ const projectsData = [
     url: 'https://hkhoa.itch.io/sacramentrum',
   },
   {
-    id: 8,
+    id: 9,
     name: 'Creative Coding',
     description:
       'Regenerative art, using p5.js. Utilized procedural generation, Perlin noise, and cellular automata.',
