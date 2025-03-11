@@ -11,7 +11,7 @@ export function Testimonials() {
       className="relative flex flex-col items-center justify-center px-8 mt-36"
     >
       <h1 className="text-white heading mb-14 md:mb-24">
-        <span className="text-blue-400">Kind words</span> from people I've
+        <span className="text-blue-400">Kind words</span> from people I&apos;ve
         worked with...
       </h1>
       <InfiniteMovingCards

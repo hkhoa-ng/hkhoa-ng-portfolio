@@ -1,13 +1,7 @@
 "use client";
 
 import React from "react";
-import { BackgroundGradient } from "./ui/background-gradient";
-import {
-  IconLocationFilled,
-  IconBrandGithub,
-  IconBrandLinkedin,
-  IconBrandItch,
-} from "@tabler/icons-react";
+import { IconLocationFilled } from "@tabler/icons-react";
 import Link from "next/link";
 import { socialMedia } from "@/data";
 import { MagicButton } from "./MagicButton";
@@ -21,7 +15,8 @@ export function Contact() {
           <span className="text-blue-400">extraordinary</span> together?
         </h1>
         <p className="text-white text-center mt-4 max-w-lg mx-auto mb-16">
-          Hire me today and let's collaborate to turn your vision into reality!
+          Hire me today and let&apos;s collaborate to turn your vision into
+          reality!
         </p>
         <MagicButton
           text="Let's get in touch"

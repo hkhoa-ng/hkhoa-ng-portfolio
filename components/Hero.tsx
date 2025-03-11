@@ -25,7 +25,7 @@ export function Hero() {
             Transforming ideas into reality.
           </div>
           <div className="font-light text-base md:text-2xl dark:text-neutral-200 py-4">
-            Hi, I'm Khoa Nguyen, a Software Engineer based in Finland.
+            Hi, I&apos;m Khoa Nguyen, a Software Engineer based in Finland.
           </div>
           <BackgroundGradient className="rounded-md bg-white dark:bg-slate-950">
             <Link href="#projects">

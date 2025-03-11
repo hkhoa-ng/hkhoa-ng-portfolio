@@ -23,7 +23,7 @@ export function About() {
 
   // Mapping to set random animation to the items
   const [styles, setStyles] = React.useState(
-    hobbies.map((_) => ({
+    hobbies.map(() => ({
       animationDelay: `0s`, // Default delay
       animationDirection: "alternate",
       animationDuration: "5s", // Default duration
@@ -41,7 +41,7 @@ export function About() {
       };
     });
     setStyles(newStyles);
-  }, [hobbies]);
+  }, []);
 
   // Content array, had to put it here since somehow this whole thing breaks if I put it outside
   const aboutMe = [
@@ -105,7 +105,7 @@ export function About() {
         >
           <div className="p-8 h-full flex flex-col justify-center items-center z-50 ">
             <h1 className="text-xl font-bold text-white text-center group-hover/bento:-translate-y-1 group-hover/bento:scale-110 transition duration-100">
-              Let's start a project together?
+              Let&apos;s start a project together?
             </h1>
             <div className="flex flex-col gap-4 mt-4">
               <MagicButton
