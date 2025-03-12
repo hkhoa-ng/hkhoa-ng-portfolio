@@ -205,6 +205,15 @@ export const navItems = [
 
 export const projectsData = [
   {
+    id: 12,
+    name: "Personal Portfolio",
+    description:
+      "My personal developer portfolio, fully responsive. Made with NextJS & TailwindCSS.",
+    img: "/images/portfolio.png",
+    source: "https://github.com/hkhoa-ng/hkhoa-ng-portfolio",
+    url: "https://khoa-ng.vercel.app/",
+  },
+  {
     id: 9,
     name: "EventGo",
     description:
