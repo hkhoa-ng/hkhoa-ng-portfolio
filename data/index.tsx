@@ -1,54 +1,12 @@
-import { MagicButton } from "@/components/MagicButton";
 import {
   IconBrandGithub,
   IconBrandLinkedin,
   IconBrandItch,
-  IconMailForward,
   IconHome,
   IconUser,
   IconMessage,
   IconContract,
 } from "@tabler/icons-react";
-import Link from "next/link";
-import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
-import Image from "next/image";
-import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
-import { getRandomInt } from "@/lib/utils";
-
-export const projects = [
-  {
-    id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
-  },
-  {
-    id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
-  },
-  {
-    id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
-  },
-  {
-    id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
-  },
-];
 
 export const testimonials = [
   {
@@ -171,13 +129,16 @@ export const techStack2 = [
     quote: "Docker",
   },
   {
-    quote: "Python",
-  },
-  {
     quote: "SQL",
   },
   {
     quote: "MongoDB",
+  },
+  { quote: "Firease" },
+  { quote: "Redis" },
+  { quote: "nginx" },
+  {
+    quote: "Python",
   },
   {
     quote: "C#",
@@ -239,5 +200,99 @@ export const navItems = [
     name: "Contact",
     link: "#contact",
     icon: <IconContract className="h-4 w-4 text-neutral-500 dark:text-white" />,
+  },
+];
+
+export const projectsData = [
+  {
+    id: 9,
+    name: "EventGo",
+    description:
+      "A prototype of a event-promotion web service. Made as a group project for university.",
+    img: "/images/event-go.png",
+    source:
+      "https://www.figma.com/file/CDJGvGFspXlKytnXK2wAYx/EventGo-Prototype?node-id=0%3A1",
+    url: "https://www.behance.net/gallery/134056463/EventGo-Web-Service",
+  },
+  {
+    id: 10,
+    name: "Student Dashboard",
+    description:
+      "A Sisu student dashboard clone, made with Java as the final project for my Programming 3 course.",
+    img: "/images/sisu.png",
+    source: "https://github.com/hkhoa-ng/tie-prog3-sisu-clone",
+    url: "https://sis-tuni.funidata.fi/student/login",
+  },
+  {
+    id: 11,
+    name: "Nginx Web Service w/ CI/CD",
+    description:
+      "Minimal web-service: GUI, load-balanced REST API, CI/CD pipeline. Python + JS, Redis, JWT, Nginx, Docker.",
+    img: "/images/nginx.png",
+    source: "https://github.com/hkhoa-ng/comp-se-140/tree/project",
+    url: "http://86.50.169.142:8198/",
+  },
+  {
+    id: 1,
+    name: "Quizzical",
+    description:
+      "A trivial quiz app that fetches questions from an API, so that every game is different.",
+    img: "/images/quizzical.png",
+    source: "https://github.com/hkhoa-ng/quizzical",
+    url: "https://hkhoa-ng.github.io/quizzical/",
+  },
+  {
+    id: 3,
+    name: "Real-time Chat",
+    description:
+      "A minimal real-time chat application. Made with React.js and Firebase.",
+    img: "/images/realtime-chat.png",
+    source: "https://github.com/hkhoa-ng/react-realtime-chat",
+    url: "https://hkhoa-ng.github.io/react-realtime-chat/",
+  },
+  {
+    id: 4,
+    name: "Wordle Clone",
+    description:
+      "Yet another clone of the popular game, Wordle, made with React.js",
+    img: "/images/wordle.png",
+    source: "https://github.com/hkhoa-ng/yet-another-wordle-clone/",
+    url: "https://hkhoa-ng.github.io/yet-another-wordle-clone/",
+  },
+  {
+    id: 5,
+    name: "CLI Pomodoro",
+    description:
+      "A simple Pomodoro-like app runs in the terminal, made with Node.js",
+    img: "/images/pomodoro.png",
+    source: "https://github.com/hkhoa-ng/cli-pomodoro/",
+    url: "https://www.npmjs.com/package/cli-pomodoro/",
+  },
+  {
+    id: 7,
+    name: "Smoof",
+    description:
+      "UI design for a smart food delivery service. Made as the final project for my Introduction to SE course.",
+    img: "/images/smoof.png",
+    source: "N/A",
+    url: "https://www.behance.net/gallery/131783703/Smoof-Smart-Food-Website",
+  },
+  {
+    id: 6,
+    name: "Fire Out!",
+    description:
+      "A retro twin-sticks shooter. Made with Unity, Aseprite, and Bosca Ceoil.",
+    img: "/images/fire-out.png",
+    source: "https://github.com/hkhoa-ng/fire-out",
+    url: "https://hkhoa.itch.io/fire-out",
+  },
+  {
+    id: 8,
+    name: "Karik",
+    description:
+      "A shooter game developed in 5 days for a Game Jam. Made with a friend in Unity.",
+    img: "/images/karik.png",
+    source: "https://github.com/hkhoa-ng/game-jam-july-2022",
+    url: "https://nhoxkien.itch.io/karik",
   },
 ];

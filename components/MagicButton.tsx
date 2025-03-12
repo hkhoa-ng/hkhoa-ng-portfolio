@@ -17,11 +17,14 @@ export function MagicButton({
   className?: string;
 }>) {
   return (
-    <BackgroundGradient
-      className={cn("rounded-md bg-white dark:bg-slate-950", className)}
-    >
+    <BackgroundGradient className={cn("rounded-md bg-white dark:bg-slate-950")}>
       <Link href={href ?? "#"}>
-        <button className=" w-full text-white px-10 py-2 flex items-center justify-center">
+        <button
+          className={cn(
+            "w-full text-white px-10 py-2 flex items-center justify-center",
+            className
+          )}
+        >
           {text}
           <span className="ml-2">{icon}</span>
         </button>

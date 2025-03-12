@@ -88,7 +88,7 @@ export function About() {
             className="absolute top-0 md:w-[250px] md:h-[250px] z-50"
           />
           <h1 className="text-xl font-bold text-white text-center px-4 group-hover/bento:translate-x-2 transition duration-100 absolute bottom-8 z-50">
-            I value collaboration & open communication 💡
+            I value collaboration & communication 💡
           </h1>
           <div className="h-full w-full dark:bg-dot-white/[0.5] [mask-image:radial-gradient(ellipse_at_center,white,transparent)] bg-neutral-100 dark:bg-slate-950" />
         </div>
@@ -109,7 +109,7 @@ export function About() {
             </h1>
             <div className="flex flex-col gap-4 mt-4">
               <MagicButton
-                text="Get in touch "
+                text="Email me"
                 href="mailto:nhkhoa020400@gmail.com"
                 icon={<IconMailForward className="h-5 w-5" />}
                 className=""
@@ -134,23 +134,29 @@ export function About() {
       className: "md:col-span-1 p-0 ",
     },
     {
-      title: "Beyond the code ✨",
+      title: "",
       description: "",
       header: (
-        <div className="flex flex-wrap gap-4 justify-center items-center min-h-[200px] h-full">
-          {hobbies.map((item, index) => (
-            <div
-              key={item}
-              className="inline-flex animate-float"
-              style={styles[index]}
-            >
-              <BackgroundGradientAnimation containerClassName="rounded-full">
-                <h1 className="text-white px-6 py-2 whitespace-nowrap">
-                  {item}
-                </h1>
-              </BackgroundGradientAnimation>
-            </div>
-          ))}
+        <div className="min-h-[200px] h-full w-full relative flex flex-wrap">
+          <h1 className="text-xl text-left w-full font-sans font-bold text-neutral-600 dark:text-neutral-200 my-1 z-10 group-hover/bento:translate-x-2 transition duration-100">
+            Beyond the code ✨
+          </h1>
+          <div className="flex flex-wrap gap-2 md:gap-4 justify-center items-center h-fit">
+            {hobbies.map((item, index) => (
+              <div
+                key={item}
+                className="inline-flex animate-float z-10"
+                style={styles[index]}
+              >
+                <BackgroundGradientAnimation containerClassName="rounded-full">
+                  <h1 className="text-white px-6 py-2 whitespace-nowrap text-sm md:text-md lg:text-lg">
+                    {item}
+                  </h1>
+                </BackgroundGradientAnimation>
+              </div>
+            ))}
+          </div>
+          <div className="h-full w-full dark:bg-dot-white/[0.5] [mask-image:radial-gradient(ellipse_at_center,white,transparent)] bg-neutral-100 dark:bg-slate-950 absolute z-0" />
         </div>
       ),
       className: "md:col-span-2",
@@ -166,7 +172,9 @@ export function About() {
       <h1 className="text-white heading pb-16 md:pb-24">
         A <span className="text-blue-400">Software Engineer</span> experienced
         in
-        <FlipWords words={words} className="dark:text-blue-400" />
+        <div className="inline-block min-w-[120px] max-w-full align-baseline">
+          <FlipWords words={words} className="dark:text-blue-400" />
+        </div>
       </h1>
       <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
         {aboutMe.map((item, i) => (
