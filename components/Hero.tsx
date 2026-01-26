@@ -29,7 +29,7 @@ export function Hero() {
             </Highlight>
           </div>
           <div className="text-center font-light text-base md:text-2xl dark:text-neutral-200 pb-12 pt-0 md:pt-4 md:pb-16">
-            I&apos;m Khoa Nguyen, a Software Engineer based in Finland, <br />
+            I&apos;m Khoa Nguyen, a Software Engineer based in the Netherlands, <br />
             specialized in creating enterprise-level cloud applications.
           </div>
           <MagicButton
